@@ -21,6 +21,22 @@
 .movie-card:hover .movie-card-img {
   transform: scale(1.05);
 }
+
+.movie-card-img-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: #fff;           /* Add a white background */
+  padding: 16px 16px 0 16px;  /* Add padding for white border (top, right, bottom, left) */
+}
+.movie-card-img {
+  object-fit: cover;
+  height: 320px;              /* Slightly smaller height */
+  width: 100%;
+  border-radius: 0.75rem;     /* Optional: round the image corners a bit */
+  background: #fff;
+  transition: transform 0.3s;
+}
 .movie-card-btn {
   transition: background 0.2s, box-shadow 0.2s;
   font-weight: 600;
